@@ -48,3 +48,20 @@ p {
   margin: 0;
 }
 
+.container {
+  max-width: 1324px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 34px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 77px;
+  }
+}
