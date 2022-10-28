@@ -5,30 +5,30 @@
 }
 
 .footer__content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: 40px;
-}
-
-.footer__navigation {
-  flex-basis: 100%;
 }
 
 .footer__copyriht {
+  margin-top: 10px;
   font-weight: 200;
   font-size: 14px;
 }
 
 @media (min-width: 560px) {
-  .footer__navigation {
-    flex-basis: auto;
+  .footer__content {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 45px 0;
   }
 
-  .footer__content {
-    margin-bottom: 45px;
+  .footer__navigation {
+    justify-self: end;
+  }
+
+  .footer__copyriht {
+    margin-top: 0px;
   }
 }
 
